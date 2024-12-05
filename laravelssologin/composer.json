@@ -14,7 +14,7 @@
         "laravel/socialite": "^5.16",
         "laravel/tinker": "^2.9",
         "socialiteproviders/keycloak": "^5.3",
-        "socialiteproviders/manager": "*"
+        "socialiteproviders/manager": "^4.7"
     },
     "require-dev": {
         "fakerphp/faker": "^1.23",

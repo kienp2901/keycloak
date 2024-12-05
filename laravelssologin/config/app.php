@@ -132,28 +132,7 @@ return [
         /*
          * Application Service Providers...
          */
-        //App\Providers\AppServiceProvider::class,
-        //App\Providers\AuthServiceProvider::class,
-        // App\Providers\BroadcastServiceProvider::class,
         App\Providers\EventServiceProvider::class,
-        //App\Providers\RouteServiceProvider::class,
-        \SocialiteProviders\Manager\ServiceProvider::class,
+        App\Providers\KeycloakProvider::class,
     ])->toArray(),
-
-    /*
-    |--------------------------------------------------------------------------
-    | Class Aliases
-    |--------------------------------------------------------------------------
-    |
-    | This array of class aliases will be registered when this application
-    | is started. However, feel free to register as many as you wish as
-    | the aliases are "lazy" loaded so they don't hinder performance.
-    |
-    */
-
-    'aliases' => Facade::defaultAliases()->merge([
-        // 'Example' => App\Facades\Example::class,
-        'FFMpeg' => ProtoneMedia\LaravelFFMpeg\Support\FFMpeg::class
-    ])->toArray(),
-
 ];
